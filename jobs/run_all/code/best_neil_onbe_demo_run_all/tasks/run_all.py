@@ -1,6 +1,6 @@
-from jwrwcwp6cnxm3jcfn8kevq_.utils import *
+from best_neil_onbe_demo_run_all.utils import *
 
-def Model_0():
+def run_all():
     from airflow.operators.python import PythonOperator
     from datetime import timedelta
     import os
@@ -8,30 +8,28 @@ def Model_0():
     import tempfile
 
     return PythonOperator(
-        task_id = "Model_0",
+        task_id = "run-all",
         python_callable = invoke_dbt_runner,
         op_kwargs = {
           "is_adhoc_run_from_same_project": False,
-          "is_prophecy_managed": True,
+          "is_prophecy_managed": False,
           "run_deps": False,
           "run_seeds": True,
           "run_parents": False,
           "run_children": False,
-          "run_tests": True,
+          "run_tests": False,
           "run_mode": "project",
           "entity_kind": None,
           "entity_name": None,
-          "project_id": None,
-          "git_entity": "branch",
-          "git_entity_value": None,
-          "git_ssh_url": "",
+          "project_id": "42644",
+          "git_entity": "tag",
+          "git_entity_value": "__PROJECT_FULL_RELEASE_TAG_PLACEHOLDER__",
+          "git_ssh_url": "https://github.com/neilbest-db/onbe-demo",
           "git_sub_path": "",
           "select": "",
           "threads": "",
           "exclude": "",
-          "run_props": " --profile run_profile",
-          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy"}, 
-          "git_token_secret": "N6kJcJyNxAwFfrJCfn9izw_", 
-          "dbt_profile_secret": ""
+          "run_props": " --profile dev",
+          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "."}
         },
     )

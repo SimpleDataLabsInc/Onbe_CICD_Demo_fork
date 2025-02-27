@@ -1,10 +1,10 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "22697",
+    "fabricId" : "22701",
     "jobId" : "jobs/run_all",
     "name" : "run-all",
-    "dagName" : "jWRwCwP6CnXm3JcfN8kEVQ_",
+    "dagName" : "best_neil_onbe_demo_run_all",
     "schedule" : "None",
     "enabled" : false,
     "alerting" : {
@@ -16,7 +16,6 @@
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "ignore_first_depends_on_past" : true,
-      "pool" : "AEDCNVaf",
       "do_xcom_push" : true
     },
     "maxActiveRuns" : 1,

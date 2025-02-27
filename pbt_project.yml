@@ -12,7 +12,7 @@ jobs:
   jobs/run_all:
     name: run-all
     description: ''
-    fabricUID: 22697
+    fabricUID: 22701
     scheduler:
       Prophecy: {}
     cloudProvider: null
@@ -27,9 +27,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2025-02-27 16:33:18'
     author: best.neil@prophecy.io
     models: []
