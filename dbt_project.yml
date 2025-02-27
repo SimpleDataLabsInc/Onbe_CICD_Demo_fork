@@ -30,6 +30,12 @@ macro-paths:
 target-path: "target"
 
 # ==================
+# Variable Configs
+# ==================
+vars:
+  env: "DEV"
+
+# ==================
 # Model Configs
 # ==================
 models:
@@ -37,3 +43,8 @@ models:
     materialized: "table"
     staging:
       materialized: "view"
+
+# ============
+# Misc
+# ============
+dispatch: []

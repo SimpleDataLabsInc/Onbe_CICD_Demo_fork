@@ -1,6 +1,20 @@
+{{
+  config({    
+    "database": 'ONBE_DEMO_' ~ var('env') 
+  })
+}}
+
 {% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
 
-WITH payments AS (
+WITH orders AS (
+
+  SELECT * 
+  
+  FROM {{ ref('stg_orders')}}
+
+),
+
+payments AS (
 
   SELECT * 
   
@@ -25,14 +39,6 @@ order_payments AS (
   FROM payments
   
   GROUP BY order_id
-
-),
-
-orders AS (
-
-  SELECT * 
-  
-  FROM {{ ref('stg_orders')}}
 
 ),
 

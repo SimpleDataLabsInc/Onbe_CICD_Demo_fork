@@ -1,30 +1,22 @@
-WITH orders AS (
+{{
+  config({    
+    "database": 'ONBE_DEMO_' ~ var('env') 
+  })
+}}
 
-  SELECT * 
-  
-  FROM {{ ref('stg_orders')}}
-
-),
-
-customer_orders AS (
-
-  SELECT 
-    customer_id,
-    min(order_date) AS first_order,
-    max(order_date) AS most_recent_order,
-    count(order_id) AS number_of_orders
-  
-  FROM orders
-  
-  GROUP BY customer_id
-
-),
-
-payments AS (
+WITH payments AS (
 
   SELECT * 
   
   FROM {{ ref('stg_payments')}}
+
+),
+
+orders AS (
+
+  SELECT * 
+  
+  FROM {{ ref('stg_orders')}}
 
 ),
 
@@ -47,6 +39,20 @@ customers AS (
   SELECT * 
   
   FROM {{ ref('stg_customers')}}
+
+),
+
+customer_orders AS (
+
+  SELECT 
+    customer_id,
+    min(order_date) AS first_order,
+    max(order_date) AS most_recent_order,
+    count(order_id) AS number_of_orders
+  
+  FROM orders
+  
+  GROUP BY customer_id
 
 ),
 

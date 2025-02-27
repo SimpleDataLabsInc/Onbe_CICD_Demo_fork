@@ -1,3 +1,9 @@
+{{
+  config({    
+    "database": 'ONBE_DEMO_' ~ var('env') 
+  })
+}}
+
 WITH source AS (
 
   {#-
