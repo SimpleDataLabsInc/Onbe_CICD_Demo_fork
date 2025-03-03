@@ -1,7 +1,7 @@
 # ==================
 # Project Details
 # ==================
-name: "Onbe CICD Demo"
+name: "Onbe_CICD_Demo"
 config-version: 2
 require-dbt-version:
 - ">=1.0.0"
