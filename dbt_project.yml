@@ -1,7 +1,7 @@
 # ==================
 # Project Details
 # ==================
-name: "HelloWorld_SQL"
+name: "onbe-cicd-demo"
 config-version: 2
 require-dbt-version:
 - ">=1.0.0"
@@ -39,7 +39,7 @@ vars:
 # Model Configs
 # ==================
 models:
-  HelloWorld_SQL:
+  onbe-cicd-demo:
     materialized: "table"
     staging:
       materialized: "view"
