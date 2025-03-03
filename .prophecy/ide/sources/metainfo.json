@@ -1,5 +1,5 @@
 {
-  "name" : "HelloWorld_SQL",
+  "name" : "onbe-cicd-demo",
   "fileSystem" : {
     "type" : "Folder",
     "name" : "",
