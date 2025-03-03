@@ -126,8 +126,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "customers",
-        "x" : 680,
-        "y" : 220,
+        "x" : 880,
+        "y" : 0,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "Retrieves all customer data from the final dataset.",
@@ -195,8 +195,8 @@
       "component" : "Model",
       "metadata" : {
         "label" : "customers",
-        "x" : 280,
-        "y" : 20,
+        "x" : 20,
+        "y" : 0,
         "phase" : 0
       },
       "properties" : {
