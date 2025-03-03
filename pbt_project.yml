@@ -34,7 +34,7 @@ jobs:
     author: best.neil@prophecy.io
     models: []
     sqlProjects:
-    - '42644'
+    - '42795'
   jobs/run-all-prod:
     name: run-all-prod
     description: ''
@@ -59,7 +59,8 @@ jobs:
     createdAt: '2025-03-03 19:11:35'
     author: best.neil@prophecy.io
     models: []
-    sqlProjects: []
+    sqlProjects:
+    - '42795'
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''

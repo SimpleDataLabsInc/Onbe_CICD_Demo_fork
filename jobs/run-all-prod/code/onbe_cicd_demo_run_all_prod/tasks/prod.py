@@ -1,4 +1,4 @@
-from best_neil_onbe_cicd_demo_run_all_prod.utils import *
+from onbe_cicd_demo_run_all_prod.utils import *
 
 def prod():
     from airflow.operators.python import PythonOperator
@@ -21,10 +21,10 @@ def prod():
           "run_mode": "project",
           "entity_kind": None,
           "entity_name": None,
-          "project_id": "42644",
-          "git_entity": "branch",
-          "git_entity_value": "main",
-          "git_ssh_url": "https://github.com/neilbest-db/onbe-demo",
+          "project_id": "42795",
+          "git_entity": "tag",
+          "git_entity_value": "__PROJECT_FULL_RELEASE_TAG_PLACEHOLDER__",
+          "git_ssh_url": "https://github.com/SimpleDataLabsInc/onbe-cicd-demo",
           "git_sub_path": "",
           "select": "",
           "threads": "",
