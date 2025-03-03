@@ -1,6 +1,6 @@
-from best_neil_onbe_demo_run_all.utils import *
+from onbe_cicd_demo_run_all_dev.utils import *
 
-def run_all():
+def dev():
     from airflow.operators.python import PythonOperator
     from datetime import timedelta
     import os
@@ -8,7 +8,7 @@ def run_all():
     import tempfile
 
     return PythonOperator(
-        task_id = "run-all",
+        task_id = "dev",
         python_callable = invoke_dbt_runner,
         op_kwargs = {
           "is_adhoc_run_from_same_project": False,
@@ -22,14 +22,14 @@ def run_all():
           "entity_kind": None,
           "entity_name": None,
           "project_id": "42644",
-          "git_entity": "tag",
-          "git_entity_value": "__PROJECT_FULL_RELEASE_TAG_PLACEHOLDER__",
+          "git_entity": "branch",
+          "git_entity_value": "dev",
           "git_ssh_url": "https://github.com/neilbest-db/onbe-demo",
           "git_sub_path": "",
           "select": "",
           "threads": "",
           "exclude": "",
-          "run_props": " --profile dev",
+          "run_props": " --profile run_profile_snowflake",
           "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "."}
         },
     )

@@ -2,9 +2,9 @@
   "metainfo" : {
     "type" : "Prophecy",
     "fabricId" : "22701",
-    "jobId" : "jobs/run_all",
-    "name" : "run-all-dev",
-    "dagName" : "onbe_cicd_demo_run_all_dev",
+    "jobId" : "jobs/run-all-prod",
+    "name" : "run-all-prod",
+    "dagName" : "best_neil_onbe_cicd_demo_run_all_prod",
     "schedule" : "None",
     "enabled" : false,
     "alerting" : {
@@ -25,15 +25,15 @@
     "dagParams" : {
       "instances" : {
         "default" : {
-          "env_dev" : "DEV"
+          "env_prod" : "PROD"
         }
       },
       "params" : {
-        "env_dev" : {
+        "env_prod" : {
           "type" : "StringParam",
           "properties" : {
-            "title" : "env_dev",
-            "value" : "DEV",
+            "title" : "env_prod",
+            "value" : "PROD",
             "canBeNull" : false
           }
         }
@@ -53,8 +53,8 @@
       "id" : "hRqUliz94CZBzrpcpr_-a$$_VroIQIAFaAc-w_IF1f4X",
       "component" : "Model",
       "metadata" : {
-        "label" : "dev",
-        "slug" : "dev",
+        "label" : "prod",
+        "slug" : "prod",
         "x" : -780,
         "y" : -320
       },
@@ -114,7 +114,7 @@
         "noWriteJson" : null,
         "printerWidth" : null,
         "sqlFabricId" : "22696",
-        "gitEntityValue" : "dev",
+        "gitEntityValue" : "main",
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
@@ -123,7 +123,7 @@
         "exclude" : null,
         "runDeps" : null,
         "loadingSnapshots" : false,
-        "gitEntityValueBranch" : "dev",
+        "gitEntityValueBranch" : "main",
         "noAnonymousUsageStats" : null,
         "selector" : null,
         "targetPath" : null,
