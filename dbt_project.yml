@@ -7,7 +7,7 @@ require-dbt-version:
 - ">=1.0.0"
 - "<2.0.0"
 version: "0.1"
-profile: "HelloWorld_SQL"
+profile: "run_profile_snowflake"
 
 # ==================
 # File Path Configs
