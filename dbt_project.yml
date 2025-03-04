@@ -39,7 +39,7 @@ vars:
 # Model Configs
 # ==================
 models:
-  onbe-cicd-demo:
+  Onbe_CICD_Demo:
     materialized: "table"
     staging:
       materialized: "view"
