@@ -4,7 +4,7 @@
     "fabricId" : "22701",
     "jobId" : "jobs/run-all-prod",
     "name" : "run-all-prod",
-    "dagName" : "onbe_cicd_demo_run_all_prod",
+    "dagName" : "Onbe_CICD_Demo_run_all_prod",
     "schedule" : "None",
     "enabled" : false,
     "alerting" : {

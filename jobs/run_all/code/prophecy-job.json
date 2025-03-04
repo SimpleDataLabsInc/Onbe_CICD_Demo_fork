@@ -4,7 +4,7 @@
     "fabricId" : "22701",
     "jobId" : "jobs/run_all",
     "name" : "run-all-dev",
-    "dagName" : "onbe_cicd_demo_run_all_dev",
+    "dagName" : "Onbe_CICD_Demo_run_all_dev",
     "schedule" : "None",
     "enabled" : true,
     "alerting" : {
@@ -56,8 +56,8 @@
       "metadata" : {
         "label" : "dev",
         "slug" : "dev",
-        "x" : -780,
-        "y" : -320
+        "x" : -1520,
+        "y" : -220
       },
       "ports" : {
         "inputs" : [ {
