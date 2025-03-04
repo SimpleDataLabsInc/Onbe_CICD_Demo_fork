@@ -6,7 +6,7 @@
     "name" : "run-all-dev",
     "dagName" : "onbe_cicd_demo_run_all_dev",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

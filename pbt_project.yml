@@ -1,6 +1,6 @@
 name: Onbe_CICD_Demo
 description: ''
-version: 0.1.1
+version: 0.2.4
 author: null
 language: sql
 buildSystem: ''
@@ -29,7 +29,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2025-02-27 16:33:18'
     author: best.neil@prophecy.io
     models: []
