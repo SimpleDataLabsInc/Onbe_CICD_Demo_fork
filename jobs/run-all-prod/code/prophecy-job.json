@@ -5,7 +5,7 @@
     "jobId" : "jobs/run-all-prod",
     "name" : "run-all-prod",
     "dagName" : "Onbe_CICD_Demo_run_all_prod",
-    "schedule" : "None",
+    "schedule" : "0/1 * * * *",
     "enabled" : true,
     "alerting" : {
       "emails" : "",

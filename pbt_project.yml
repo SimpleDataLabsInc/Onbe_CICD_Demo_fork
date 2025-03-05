@@ -17,7 +17,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: None
+    scheduleCron: 0/1 * * * *
     timeout: null
     alerting:
       emails: ''
@@ -43,7 +43,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: None
+    scheduleCron: 0/1 * * * *
     timeout: null
     alerting:
       emails: ''

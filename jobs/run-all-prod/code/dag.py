@@ -12,7 +12,7 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 
 with DAG(
     dag_id = "Onbe_CICD_Demo_run_all_prod", 
-    schedule_interval = None, 
+    schedule_interval = "0/1 * * * *", 
     default_args = {"owner" : "Prophecy", "retries" : 0, "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
     params = {'env_prod' : Param("""PROD""", type = "string", title = """env_prod""")}, 
     start_date = pendulum.today('UTC'), 
