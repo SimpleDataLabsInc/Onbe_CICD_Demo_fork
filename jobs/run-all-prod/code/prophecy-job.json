@@ -6,7 +6,7 @@
     "name" : "run-all-prod",
     "dagName" : "Onbe_CICD_Demo_run_all_prod",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
