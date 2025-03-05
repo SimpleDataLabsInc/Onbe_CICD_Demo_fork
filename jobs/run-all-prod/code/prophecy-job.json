@@ -57,7 +57,7 @@
         "label" : "prod",
         "slug" : "prod",
         "x" : -780,
-        "y" : -320
+        "y" : -340
       },
       "ports" : {
         "inputs" : [ {
@@ -89,7 +89,7 @@
         "gitSshUrl" : null,
         "indirectSelection" : null,
         "partialParse" : null,
-        "vars" : "{env:{{ params.env_prod }}}",
+        "vars" : "{\"env\":\"{{ params.env_prod }}\"}",
         "isAdhocRunFromSameProject" : null,
         "noPrint" : null,
         "quiet" : null,

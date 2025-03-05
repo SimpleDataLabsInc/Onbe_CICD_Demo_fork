@@ -29,7 +29,7 @@ def dev():
           "select": "",
           "threads": "",
           "exclude": "",
-          "run_props": " --profile run_profile_snowflake",
+          "run_props": " --profile run_profile_snowflake --vars {\"env\":\"{{ params.env_dev }}\"}",
           "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/usr/local/airflow/dags"}
         },
     )
