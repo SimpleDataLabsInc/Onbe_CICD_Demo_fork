@@ -1,6 +1,6 @@
 {{
   config({    
-    "database": 'ONBE_DEMO_' ~ var('env')  ~ '2',
+    "database": 'ONBE_DEMO_' ~ var('env')  ~ '_2',
     "schema": "PUBLIC"
   })
 }}
