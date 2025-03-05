@@ -30,6 +30,6 @@ def dev():
           "threads": "",
           "exclude": "",
           "run_props": " --profile run_profile_snowflake",
-          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "."}
+          "envs": {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/usr/local/airflow/dags"}
         },
     )
