@@ -89,7 +89,7 @@
         "gitSshUrl" : null,
         "indirectSelection" : null,
         "partialParse" : null,
-        "vars" : null,
+        "vars" : "{env:{{ params.env_prod }}}",
         "isAdhocRunFromSameProject" : null,
         "noPrint" : null,
         "quiet" : null,
